@@ -1,0 +1,138 @@
+/*Importing Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+body{
+    background-color: #332A2A;
+    color: #FFFFFF;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container-fluid{
+    width: 90%;
+}
+
+.header{
+    margin: 60px 0 16px 0;
+    font-family: 'Roboto', sans-serif;
+}
+.social{
+    float: right;
+    margin-bottom: 16px;
+}
+.icon{
+    margin: 8px 6px 8px 6px;
+    background-color: #FFFFFF;
+    color: #2E3540;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.fab{
+    font-size: 40px;
+    width: 60px;
+    text-align: center;
+}
+
+.icon:hover{
+    color: #56CCFF;
+    background-color: #FFFFFF;
+}
+
+.header p{
+    width: 100%;
+    background-color: #2E3540;
+    padding: 8px;
+    font-size: 120%;
+}
+
+.bio{
+    margin-top: 48px;
+}
+
+.bio-image{
+    border-radius: 50%;
+    border: #56CCFF 6px solid;
+    width: 300px;
+    height: 280px;
+}
+
+.about-me h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-me p{
+    font-size: 28px;
+}
+
+.jobs{
+    margin: 60px 0 30px 0;
+}
+
+.jobs .job{
+    background-color: #2E3540;
+    margin: 10px;
+    padding: 10px;
+}
+
+.jobs .job h3{
+    color: #56CCFF;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.jobs .job ul{
+    margin-top: 16px;
+}
+
+.jobs .job li{
+    font-size: 20px;
+}
+
+.contact-me h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-me p{
+    font-size: 20px;
+    width: 60%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+footer{
+    background-color: #2E3540;
+    font-size: 20px;
+    padding: 12px;
+}
+
+/* Cursor */
+.txt-type > .txt {
+    border-right: 0.2rem solid #777;
+  }
+
+
+
+
+
+/*Media Breakpoints*/
+@media (max-width:768px){
+    .header, .bio, .contact-me{
+        text-align: center;
+    }
+
+    .about-me{
+        margin-top: 20px;
+    }
+
+    .contact-me p{
+        width: 100%;
+    }
+}
