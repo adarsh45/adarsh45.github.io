@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#page{
+    position: relative;
+}
+
+.options{
+    position: absolute;
+    cursor: pointer;
+    right: 2em;
+}
+
+#select_thickness{
+    height: 30px;
+    align-self: center;
+}
+
+.round{
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    margin: 8px;
+}
+
+#clear_btn{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#yellow{
+    background-color: #FFF222;
+}
+#blue{
+    background-color: #0ABDE3;
+}
+#white{
+    background-color: #FFFFFF;
+}
+
+#canvas{
+    cursor: crosshair;
+    background-color: #202020;
+}
