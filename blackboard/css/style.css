@@ -12,11 +12,14 @@ body{
     position: absolute;
     cursor: pointer;
     right: 2em;
+    margin: 8px;
 }
 
 #select_thickness{
     height: 30px;
     align-self: center;
+    margin-right: 8px;
+    margin-left: 8px;
 }
 
 .round{
@@ -26,9 +29,31 @@ body{
     margin: 8px;
 }
 
-#clear_btn{
+#erase_btn{
+    display: flex;
     text-align: center;
-    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: baseline;
+    padding-top: 12px;
+    margin-right: 8px;
+    margin-top: 4px;
+    margin-left: 8px;
+    border: 1px solid ghostwhite;
+    border-radius: 50%;
+}
+
+#clear_all_btn{
+    margin: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #FFFFFF;
+    border: 1px solid ghostwhite;
+}
+
+#select_thickness{
+    color: #FFFFFF;
+    background-color: #202020;
 }
 
 #yellow{

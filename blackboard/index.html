@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/c6153d298d.js"></script>
     <title>Blackboard</title>
@@ -14,11 +14,11 @@
 
         <div class="options row justify-content-end align-item-center">
             <div class="colors row">
-                <span id="clear_btn" class="round">
+                <span id="erase_btn">
                     <i class="fas fa-eraser fa-2x" style="color: white"></i>
                 </span>
 
-                <select name="thickness" id="select_thickness" 
+                <select name="thickness" id="select_thickness"
                 onchange="changeThickness(this.options[this.selectedIndex].value)">
                     <option value="5">5</option>
                     <option value="6">6</option>
@@ -31,6 +31,7 @@
                 <span id="yellow" class="round" onclick="changeColor('#FFF222')"></span>
                 <span id="blue" class="round" onclick="changeColor('#0ABDE3')"></span>
                 <span id="white" class="round" onclick="changeColor('#FFFFFF')"></span>
+                <input type="button" id="clear_all_btn" class="btn" onclick="clearAll" value="Clear"/>
             </div>
         </div>
         
@@ -38,7 +39,7 @@
     </div>
 
 
-    <script src="./canvas.js"></script>
+    <script src="./js/canvas.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
