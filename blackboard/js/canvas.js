@@ -48,7 +48,7 @@ window.addEventListener("load", () => {
         canvas.addEventListener("mouseup", finishErasing);
         canvas.addEventListener("mousemove", eraseBoard);
 
-        canvas.style.cursor = "url('../img/circle.svg'), auto";
+        canvas.style.cursor = "url(./img/circle.svg), auto";
         console.log("started to erase");
     });
 
