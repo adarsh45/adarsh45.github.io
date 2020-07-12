@@ -12,12 +12,52 @@
 <body>
     <div id="page">
 
+        <!--sidebar code here-->
+        <div id="sidebar">
+            <div class="toggle-btn" onClick="toggleSidebar()">
+                <span></span><span></span><span></span>
+            </div>
+
+            <ul class="text-left">
+              <li id="header_nav">
+                <a href="https://adarsh45.github.io/blackboard/">
+                    <h3 class="h1">Blackboard</h3>
+                </a>
+                <a href="https://adarsh45.github.io" target="blank">
+                    <h6 class="h6">Created with <i class="fas fa-heart"></i> by Adarsh Shete</h6>
+                </a>
+              </li>
+              <li>
+                <form action="#" class="radio-form" id="radio-form">
+                  <h4 class="h3">Select board</h4>
+                <div class="radio">
+                    <label class="h5"><input type="radio" name="optradio" value="#202020" checked/>Blackboard</label>
+                </div>
+                <div class="radio">
+                    <label class="h5"><input type="radio" name="optradio" value="#F8F8FF"/>Whiteboard</label>
+                </div>
+                <div class="radio">
+                    <label class="h5"><input type="radio" name="optradio" value="#244D15"/>Greenboard</label>
+                </div>
+                </form>
+              </li>
+              <li>
+                  <h3 class="h3">Insert shapes</h3>
+                  <ul class="h5 select-shapes">
+                      <li id="line">Straight Line</li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!--options bar i.e.toolbar code here-->
         <div class="options row justify-content-end align-item-center">
             <div class="colors row">
                 <span id="erase_btn">
-                    <i class="fas fa-eraser fa-2x" style="color: white"></i>
+                    <i class="fas fa-eraser fa-2x" style="color: #202020"></i>
                 </span>
 
+                <!--dropdown for selecting thickness of pen-->
                 <select name="thickness" id="select_thickness"
                 onchange="changeThickness(this.options[this.selectedIndex].value)">
                     <option value="5">5</option>
@@ -27,14 +67,16 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
                 </select>
-
+                <!--color buttons for selecting color of pen-->
                 <span id="yellow" class="round" onclick="changeColor('#FFF222')"></span>
                 <span id="blue" class="round" onclick="changeColor('#0ABDE3')"></span>
                 <span id="white" class="round" onclick="changeColor('#FFFFFF')"></span>
-                <input type="button" id="clear_all_btn" class="btn" onclick="clearAll" value="Clear"/>
+                <span id="black" class="round" onclick="changeColor('#000000')"></span>
+                <input type="button" id="clear_all_btn" class="btn" value="Clear"/>
             </div>
         </div>
         
+        <!--main canvas goes here-->
         <canvas id="canvas"></canvas>
     </div>
 
