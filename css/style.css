@@ -1,138 +1,175 @@
-/*Importing Fonts*/
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Prompt&display=swap');
 
+:root{
+    --primary-blue-color: #56CCFF;
+    --primary-black-color: #050505;
+}
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background-color: #332A2A;
-    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    background: url('../img/bg.png') no-repeat center center fixed;
+    background-size: cover;
 }
 
-a, a:hover{
-    text-decoration: none;
-    color: inherit;
+/* navbar styling STARTS */
+.my-navbar{
+    background-color: var(--primary-black-color);
+    font-family: 'Open Sans', sans-serif;
 }
 
-.container-fluid{
-    width: 90%;
+.navbar-brand{
+    font-size: x-large;
 }
 
-.header{
-    margin: 60px 0 16px 0;
-    font-family: 'Roboto', sans-serif;
+.navbar-nav{
+    font-size: larger;
 }
-.social{
-    float: right;
-    margin-bottom: 16px;
+
+.navbar-item{
+    padding: 0 1em;
+    font-family: 'Open Sans', sans-serif;
 }
+.active{
+    color: #56CCFF;
+}
+/* navbar styling ENDS */
+
+/*home-page styling STARTS*/
+#home{
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+#profile-name{
+    margin: 20px 0;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    font-size: 2em;
+}
+#profile-role{
+    margin: 20px 0;
+    font-size: 1.6em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fa-android{
+    color: #39E93F;
+}
+
 .icon{
     margin: 8px 6px 8px 6px;
     background-color: #FFFFFF;
     color: #2E3540;
     padding: 10px;
     border-radius: 50%;
-}
-
-.fab{
-    font-size: 40px;
-    width: 60px;
+    font-size: 30px;
+    width: 50px;
     text-align: center;
 }
-
 .icon:hover{
-    color: #56CCFF;
-    background-color: #FFFFFF;
+    opacity: 0.7;
 }
-
-.header p{
-    width: 100%;
-    background-color: #2E3540;
-    padding: 8px;
-    font-size: 120%;
+#ic-linkedin{
+    background: #007bb5;
+    color: white;
 }
-
-.bio{
-    margin-top: 48px;
+#ic-github{
+    background: white;
+    color: #211F1F;
 }
-
-.bio-image{
-    border-radius: 50%;
-    border: #56CCFF 6px solid;
-    width: 300px;
-    height: 280px;
+#ic-instagram{
+    background: #E1306C;
+    color: white;
 }
+#ic-facebook {
+    background: #3B5998;
+    color: white;
+}
+/* home section styling ENDS */
 
-.about-me h3{
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    margin-bottom: 20px;
+/* About Me section styling STARTS */
+#aboutMe{
+    padding: 60px 0;
+}
+.graphic-image{
+    padding: 40px;
+}
+.section-heading{
+    margin: 30px 0;
+    padding-left: 20px;
+    font-family: 'Prompt', sans-serif;
+    color: white;
     text-align: center;
 }
-
-.about-me p{
-    font-size: 28px;
+#about-me-para{
+    margin-top: 30px;
+    padding-left: 20px;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.6em;
+    line-height: 50px;
 }
+/* About Me section styling ENDS */
 
-.jobs{
-    margin: 60px 0 30px 0;
+/* projects section styling STARTS */
+#projects{
+    padding: 60px 0;
 }
-
-.jobs .job{
-    background-color: #2E3540;
-    margin: 10px;
-    padding: 10px;
+.project-card{
+    margin: 50px;
+    background-color: #fff;
+    padding: 0;
 }
-
-.jobs .job h3{
-    color: #56CCFF;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
+.project-description{
+    width: 100%;
+    padding: 20px;
 }
-
-.jobs .job ul{
-    margin-top: 16px;
+.project-summary-text{
+    font-size: 1.4em;
+    margin: 0;
 }
-
-.jobs .job li{
-    font-size: 20px;
+.technologies-used ul li{
+    font-size: 1.2em;
 }
-
-.contact-me h2{
-    font-family: 'Roboto', sans-serif;
+.btn-github-link{
+    margin: 0;
+    background-color: #211F1F;
+    font-size: 1.4em;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    border: none;
+    bottom: 0;
 }
+/* projects section styling ENDS */
 
-.contact-me p{
-    font-size: 20px;
-    width: 60%;
-    font-family: 'Roboto', sans-serif;
+/* education section styling STARTS */
+#education{
+    padding: 120px 0 160px 0;
 }
-
-
-
-footer{
-    background-color: #2E3540;
-    font-size: 20px;
-    padding: 12px;
+.table{
+    background-color: #fff;
+    padding: 40px;
+    margin: 0 60px;
+    font-size: 1.2em;
+    text-align: center;
 }
+.faded-text{
+    color: gray;
+    font-size: 0.9em;
+}
+/* education section styling ENDS */
 
-/* Cursor */
-.txt-type > .txt {
-    border-right: 0.2rem solid #777;
-  }
-
-
-
-
-
-/*Media Breakpoints*/
-@media (max-width:768px){
-    .header, .bio, .contact-me{
-        text-align: center;
-    }
-
-    .about-me{
-        margin-top: 20px;
-    }
-
-    .contact-me p{
-        width: 100%;
-    }
+.footer{
+    padding: 12px 0;
+    color: white;
+    font-size: 1.2em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary-black-color);
+    text-align: center;
 }
