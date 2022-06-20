@@ -1,175 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Prompt&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Prompt&display=swap");
 
-:root{
-    --primary-blue-color: #56CCFF;
-    --primary-black-color: #050505;
+:root {
+  --primary-blue-color: #56ccff;
+  --primary-green-color: #39e93f;
+  --primary-black-color: #050505;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    margin: 0;
-    padding: 0;
-    background: url('../img/bg.png') no-repeat center center fixed;
-    background-size: cover;
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../img/bg.png") no-repeat center center fixed;
+  background-size: cover;
 }
 
 /* navbar styling STARTS */
-.my-navbar{
-    background-color: var(--primary-black-color);
-    font-family: 'Open Sans', sans-serif;
+.my-navbar {
+  background-color: var(--primary-black-color);
+  font-family: "Open Sans", sans-serif;
 }
 
-.navbar-brand{
-    font-size: x-large;
+.navbar-brand {
+  font-size: x-large;
 }
 
-.navbar-nav{
-    font-size: larger;
+.navbar-nav {
+  font-size: larger;
 }
 
-.navbar-item{
-    padding: 0 1em;
-    font-family: 'Open Sans', sans-serif;
+.navbar-item {
+  padding: 0 1em;
+  font-family: "Open Sans", sans-serif;
 }
-.active{
-    color: #56CCFF;
+.active {
+  color: #56ccff;
 }
 /* navbar styling ENDS */
 
 /*home-page styling STARTS*/
-#home{
-    color: white;
-    text-align: center;
-    padding: 60px 0;
+#home {
+  color: white;
+  text-align: center;
+  padding: 60px 0;
 }
-#profile-name{
-    margin: 20px 0;
-    font-family: 'Roboto', 'Open Sans', sans-serif;
-    font-size: 2em;
+#profile-name {
+  margin: 20px 0;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 2em;
 }
-#profile-role{
-    margin: 20px 0;
-    font-size: 1.6em;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.fa-android{
-    color: #39E93F;
+#profile-role {
+  margin: 20px 0;
+  font-size: 1.6em;
+  font-family: "Open Sans", sans-serif;
 }
 
-.icon{
-    margin: 8px 6px 8px 6px;
-    background-color: #FFFFFF;
-    color: #2E3540;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
+.fa-android {
+  color: #39e93f;
 }
-.icon:hover{
-    opacity: 0.7;
+
+.icon {
+  margin: 8px 6px 8px 6px;
+  background-color: #ffffff;
+  color: #2e3540;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
 }
-#ic-linkedin{
-    background: #007bb5;
-    color: white;
+.icon:hover {
+  opacity: 0.7;
 }
-#ic-github{
-    background: white;
-    color: #211F1F;
+#ic-linkedin {
+  background: #007bb5;
+  color: white;
 }
-#ic-instagram{
-    background: #E1306C;
-    color: white;
+#ic-github {
+  background: white;
+  color: #211f1f;
+}
+#ic-instagram {
+  background: #e1306c;
+  color: white;
 }
 #ic-facebook {
-    background: #3B5998;
-    color: white;
+  background: #3b5998;
+  color: white;
 }
 /* home section styling ENDS */
 
 /* About Me section styling STARTS */
-#aboutMe{
-    padding: 60px 0;
+#aboutMe {
+  padding: 60px 0;
 }
-.graphic-image{
-    padding: 40px;
+.graphic-image {
+  padding: 40px;
 }
-.section-heading{
-    margin: 30px 0;
-    padding-left: 20px;
-    font-family: 'Prompt', sans-serif;
-    color: white;
-    text-align: center;
+.section-heading {
+  margin: 30px 0;
+  padding-left: 20px;
+  font-family: "Prompt", sans-serif;
+  color: white;
+  text-align: center;
 }
-#about-me-para{
-    margin-top: 30px;
-    padding-left: 20px;
-    color: white;
-    font-family: 'Roboto',sans-serif;
-    font-size: 1.6em;
-    line-height: 50px;
+#about-me-para {
+  margin-top: 30px;
+  padding-left: 20px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6em;
+  line-height: 50px;
 }
 /* About Me section styling ENDS */
 
 /* projects section styling STARTS */
-#projects{
-    padding: 60px 0;
+#projects {
+  padding: 60px 0;
 }
-.project-card{
-    margin: 50px;
-    background-color: #fff;
-    padding: 0;
+.project-card {
+  margin: 50px;
+  background-color: #fff;
+  padding: 0;
 }
-.project-description{
-    width: 100%;
-    padding: 20px;
+.project-description {
+  width: 100%;
+  padding: 20px;
 }
-.project-summary-text{
-    font-size: 1.4em;
-    margin: 0;
+.project-summary-text {
+  font-size: 1.4em;
+  margin: 0;
 }
-.technologies-used ul li{
-    font-size: 1.2em;
+.technologies-used ul li {
+  font-size: 1.2em;
 }
-.btn-github-link{
-    margin: 0;
-    background-color: #211F1F;
-    font-size: 1.4em;
-    color: white;
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-    border: none;
-    bottom: 0;
+.btn-github-link {
+  margin: 0;
+  background-color: #211f1f;
+  font-size: 1.4em;
+  color: white;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  border: none;
+  bottom: 0;
 }
 /* projects section styling ENDS */
 
 /* education section styling STARTS */
-#education{
-    padding: 120px 0 160px 0;
+#education {
+  padding: 120px 0 160px 0;
 }
-.table{
-    background-color: #fff;
-    padding: 40px;
-    margin: 0 60px;
-    font-size: 1.2em;
-    text-align: center;
+.table {
+  background-color: #fff;
+  padding: 40px;
+  margin: 0 60px;
+  font-size: 1.2em;
+  text-align: center;
 }
-.faded-text{
-    color: gray;
-    font-size: 0.9em;
+.faded-text {
+  color: gray;
+  font-size: 0.9em;
 }
 /* education section styling ENDS */
 
-.footer{
-    padding: 12px 0;
-    color: white;
-    font-size: 1.2em;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--primary-black-color);
-    text-align: center;
+.footer {
+  padding: 12px 0;
+  color: white;
+  font-size: 1.2em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--primary-black-color);
+  text-align: center;
 }
